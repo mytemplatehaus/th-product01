@@ -3,276 +3,304 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alex Carter | Premium Portfolio Designer</title>
-    <meta
-      name="description"
-      content="Premium portfolio for Alex Carter — crafting high-converting digital experiences through strategy-led design and world-class UI/UX."
-    />
-    <meta name="theme-color" content="#09090f" />
+    <title>Expo. — Minimal Portfolio</title>
+    <meta name="description" content="Modern minimalist one-page portfolio website." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="noise"></div>
-    <div class="cursor" aria-hidden="true"></div>
-    <div class="cursor-ring" aria-hidden="true"></div>
-    <div class="scroll-progress" aria-hidden="true"></div>
-
-    <header class="navbar" id="top">
-      <a href="#top" class="brand">Alex<span>Carter</span></a>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
-      <nav id="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a class="logo" href="#top">Expo.</a>
+        <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+        <nav class="nav-links">
+          <a href="#top">Home</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section class="hero section" id="hero">
-        <div class="hero-copy reveal">
-          <p class="kicker">Award-level Product & Web Designer</p>
-          <h1>Designing Digital Experiences That Convert.</h1>
-          <p class="subheadline">
-            I build premium websites that don’t just look beautiful — they drive results.
-          </p>
-          <div class="cta-row">
-            <a href="#projects" class="btn btn-primary magnetic">View My Work</a>
-            <a href="#contact" class="btn btn-secondary magnetic">Let’s Work Together</a>
+      <section class="hero section fade-up">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1>I’m a creative<br />graphic &amp; web<br />designer</h1>
+            <p>
+              Building timeless brand and digital experiences<br />
+              with strategy, clarity, and modern aesthetics.
+            </p>
+            <a href="#contact" class="btn">CONNECT WITH ME</a>
           </div>
-        </div>
-        <div class="hero-visual reveal">
-          <div class="orb orb-1"></div>
-          <div class="orb orb-2"></div>
-          <div class="orb orb-3"></div>
-          <div class="mockup-card">
-            <div class="screen-glow"></div>
-            <p>Conversion Rate</p>
-            <strong>+212%</strong>
-            <small>for a B2B SaaS relaunch</small>
+          <div class="hero-image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80&sat=-100"
+              alt="Professional black and white portrait"
+              class="hero-image"
+            />
           </div>
-          <div class="floating-chip">Awwwards-level Craft</div>
-        </div>
-        <a class="scroll-indicator" href="#trust" aria-label="Scroll to next section">
-          <span></span>
-        </a>
-      </section>
-
-      <section class="trust section" id="trust">
-        <div class="section-head reveal">
-          <p class="kicker">Trusted by forward-thinking teams</p>
-          <h2>Proof that premium design creates measurable growth.</h2>
-        </div>
-        <div class="logo-grid reveal">
-          <div class="logo">NOVA</div>
-          <div class="logo">AETHER</div>
-          <div class="logo">LUMEN</div>
-          <div class="logo">VELOCITY</div>
-          <div class="logo">ORBITAL</div>
-          <div class="logo">ZENITH</div>
-        </div>
-        <div class="counter-grid reveal">
-          <article>
-            <h3 data-count="50">0</h3>
-            <p>Projects Delivered</p>
-          </article>
-          <article>
-            <h3 data-count="100">0</h3>
-            <p>Client Satisfaction</p>
-          </article>
-          <article>
-            <h3 data-count="5">0</h3>
-            <p>Years Experience</p>
-          </article>
         </div>
       </section>
 
-      <section class="about section" id="about">
-        <div class="about-image reveal">
-          <div class="portrait" role="img" aria-label="Portrait of Alex Carter"></div>
+      <section class="client-strip section fade-up">
+        <div class="container brands">
+          <span>Hitech</span>
+          <span>Flash</span>
+          <span>Proline</span>
+          <span>Hitech</span>
         </div>
-        <div class="about-copy reveal">
-          <p class="kicker">About</p>
-          <h2>I blend strategy, storytelling, and polished interface craft.</h2>
+      </section>
+
+      <section class="help section fade-up">
+        <div class="container">
+          <h2>We can help</h2>
+          <div class="help-grid">
+            <div class="phone-card">
+              <img
+                src="https://images.unsplash.com/photo-1616348436168-de43ad0db179?auto=format&fit=crop&w=700&q=80"
+                alt="Phone mockup"
+              />
+            </div>
+            <div class="service-list">
+              <article>
+                <h3>UX/UI Design</h3>
+                <p>Crafting elegant digital interfaces that are intuitive and conversion-focused.</p>
+                <ul>
+                  <li>User flow mapping</li>
+                  <li>Interface systems</li>
+                  <li>Interaction details</li>
+                </ul>
+              </article>
+              <article>
+                <h3>Website Design</h3>
+                <p>Premium editorial websites tailored for modern, fast-growing brands.</p>
+              </article>
+              <article>
+                <h3>SEO Marketing</h3>
+                <p>Search-optimized structure and content strategy to improve discovery.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="results section fade-up">
+        <div class="container centered narrow">
+          <h2>Providing stellar<br />results for every client</h2>
           <p>
-            Over the past 5+ years, I’ve partnered with startups and established brands to transform digital products into high-converting experiences. Every decision is driven by user psychology, conversion data, and premium visual standards.
+            We blend design intelligence and market insight to deliver measurable,
+            business-focused outcomes.
           </p>
-          <ul>
-            <li>✓ Strategy-Driven Design</li>
-            <li>✓ Conversion Optimization</li>
-            <li>✓ Clean Code</li>
-            <li>✓ Modern UX Systems</li>
-          </ul>
+          <a href="#portfolio" class="btn">EXPLORE ALL PROJECTS</a>
         </div>
       </section>
 
-      <section class="projects section" id="projects">
-        <div class="section-head reveal">
-          <p class="kicker">Featured Projects</p>
-          <h2>Selected work designed to increase impact and revenue.</h2>
+      <section class="portfolio section fade-up" id="portfolio">
+        <div class="container">
+          <div class="portfolio-grid">
+            <article class="project-card">
+              <div class="thumb-wrap">
+                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1000&q=80" alt="Project thumbnail" />
+              </div>
+              <h3>Aria Commerce</h3>
+              <p>Website Design</p>
+            </article>
+            <article class="project-card">
+              <div class="thumb-wrap">
+                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1000&q=80" alt="Project thumbnail" />
+              </div>
+              <h3>Novalab Platform</h3>
+              <p>UX/UI Design</p>
+            </article>
+            <article class="project-card">
+              <div class="thumb-wrap">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=80" alt="Project thumbnail" />
+              </div>
+              <h3>Hexa Studio</h3>
+              <p>Brand Experience</p>
+            </article>
+          </div>
+          <div class="portfolio-nav" aria-hidden="true">
+            <button>←</button>
+            <button>→</button>
+          </div>
         </div>
-        <div class="project-grid">
-          <article class="project-card reveal" data-modal="modal1">
-            <div class="thumb thumb-1"></div>
-            <span class="tag">SaaS Platform</span>
-            <h3>FlowStack Dashboard</h3>
-            <p>Reimagined onboarding and core flows to reduce drop-off by 38%.</p>
-            <div class="overlay">View Case Study</div>
+      </section>
+
+      <section class="process section fade-up">
+        <div class="container">
+          <div class="process-head">
+            <h2>Process that helps you to break the competition</h2>
+            <a href="#contact" class="btn">START A PROJECT</a>
+          </div>
+          <div class="process-grid">
+            <article>
+              <span class="icon-dot">◌</span>
+              <h3>Market research</h3>
+              <p>Identify key audience needs and strategic market opportunities.</p>
+            </article>
+            <article>
+              <span class="icon-dot">◌</span>
+              <h3>Wire-framing</h3>
+              <p>Build clear content hierarchy and user-first interaction flows.</p>
+            </article>
+            <article>
+              <span class="icon-dot">◌</span>
+              <h3>Final visual design</h3>
+              <p>Deliver a polished premium interface with refined visual consistency.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="video section fade-up">
+        <div class="container">
+          <div class="video-head">
+            <h2>Watch video to discover me</h2>
+            <p>
+              A quick overview of my approach, workflow, and the design thinking behind each project.
+            </p>
+          </div>
+          <div class="video-thumb">
+            <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=1400&q=80" alt="Modern office creative space" />
+            <button class="play-btn" aria-label="Play video">▶</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats section fade-up">
+        <div class="container stats-grid">
+          <article>
+            <span class="stat-icon">✦</span>
+            <h3>30+</h3>
+            <p>Projects completed globally.</p>
           </article>
-          <article class="project-card reveal" data-modal="modal2">
-            <div class="thumb thumb-2"></div>
-            <span class="tag">E-commerce</span>
-            <h3>Velour Commerce</h3>
-            <p>Premium storefront redesign resulting in 2.1x higher conversion.</p>
-            <div class="overlay">View Case Study</div>
+          <article>
+            <span class="stat-icon">✦</span>
+            <h3>4.8/5</h3>
+            <p>Average client satisfaction score.</p>
           </article>
-          <article class="project-card reveal" data-modal="modal3">
-            <div class="thumb thumb-3"></div>
-            <span class="tag">Fintech App</span>
-            <h3>Pulse Finance</h3>
-            <p>Introduced trust-first UX and micro-interactions for retention growth.</p>
-            <div class="overlay">View Case Study</div>
+          <article>
+            <span class="stat-icon">✦</span>
+            <h3>3M+</h3>
+            <p>Audience reached through my work.</p>
           </article>
         </div>
       </section>
 
-      <section class="services section" id="services">
-        <div class="section-head reveal">
-          <p class="kicker">Services</p>
-          <h2>End-to-end design systems for growth-focused brands.</h2>
+      <section class="testimonials section fade-up">
+        <div class="container centered narrow">
+          <h2>Loved by customer around the world</h2>
         </div>
-        <div class="service-grid">
-          <article class="service-card reveal"><span>✦</span><h3>Web Design</h3><p>High-performance websites built for trust and action.</p></article>
-          <article class="service-card reveal"><span>◎</span><h3>UI/UX Design</h3><p>Intuitive user journeys with premium product experience.</p></article>
-          <article class="service-card reveal"><span>◇</span><h3>Website Templates</h3><p>Conversion-ready templates with elevated visual identity.</p></article>
-          <article class="service-card reveal"><span>◍</span><h3>Branding</h3><p>Distinctive branding systems that communicate authority.</p></article>
-          <article class="service-card reveal"><span>⬢</span><h3>Landing Pages</h3><p>Focused pages engineered to maximize campaign ROI.</p></article>
-          <article class="service-card reveal"><span>▣</span><h3>E-commerce Design</h3><p>Luxury shopping experiences optimized for sales velocity.</p></article>
-        </div>
-      </section>
-
-      <section class="process section" id="process">
-        <div class="section-head reveal">
-          <p class="kicker">Process</p>
-          <h2>A proven framework from insight to launch.</h2>
-        </div>
-        <div class="process-line reveal">
-          <div class="step"><h3>01</h3><p>Discovery</p></div>
-          <div class="step"><h3>02</h3><p>Strategy</p></div>
-          <div class="step"><h3>03</h3><p>Design</p></div>
-          <div class="step"><h3>04</h3><p>Development</p></div>
-          <div class="step"><h3>05</h3><p>Launch</p></div>
-        </div>
-      </section>
-
-      <section class="testimonials section" id="testimonials">
-        <div class="section-head reveal">
-          <p class="kicker">Testimonials</p>
-          <h2>What clients say about the experience.</h2>
-        </div>
-        <div class="testimonial-slider reveal">
-          <button class="slide-btn prev" aria-label="Previous testimonial">‹</button>
-          <article class="testimonial active">
-            <div class="person">
-              <div class="avatar">ML</div>
-              <div><h3>Maya Lewis</h3><p>CEO, Nova Labs</p></div>
-            </div>
+        <div class="container testimonial-grid">
+          <article class="testimonial-card">
             <p class="stars">★★★★★</p>
-            <blockquote>
-              “Alex transformed our site into a high-end growth machine. We saw higher lead quality within the first week of launch.”
-            </blockquote>
-          </article>
-          <article class="testimonial">
-            <div class="person">
-              <div class="avatar">RK</div>
-              <div><h3>Ryan Kim</h3><p>Head of Product, Pulse</p></div>
+            <p>
+              “A remarkable design partner. The new website gave us clarity, confidence,
+              and measurable growth in lead quality.”
+            </p>
+            <div class="testimonial-meta">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Client avatar" />
+              <div>
+                <strong>Sophia Turner</strong>
+                <span>Atlas Co.</span>
+              </div>
             </div>
-            <p class="stars">★★★★★</p>
-            <blockquote>
-              “From UX strategy to pixel-perfect execution, every detail felt intentional. It’s now our strongest sales asset.”
-            </blockquote>
+            <small>350% Revenue Increase</small>
           </article>
-          <article class="testimonial">
-            <div class="person">
-              <div class="avatar">AD</div>
-              <div><h3>Ana Diaz</h3><p>Founder, Velour</p></div>
+          <article class="testimonial-card">
+            <p class="stars">★★★★★</p>
+            <p>
+              “The process was structured and refined. Every detail felt intentional,
+              from brand direction to final responsive execution.”
+            </p>
+            <div class="testimonial-meta">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80" alt="Client avatar" />
+              <div>
+                <strong>Daniel Reed</strong>
+                <span>Proline Inc.</span>
+              </div>
             </div>
-            <p class="stars">★★★★★</p>
-            <blockquote>
-              “The final website feels cinematic, luxurious, and incredibly effective. Our conversion rate more than doubled.”
-            </blockquote>
+            <small>210% Engagement Lift</small>
           </article>
-          <button class="slide-btn next" aria-label="Next testimonial">›</button>
         </div>
       </section>
 
-      <section class="contact section" id="contact">
-        <div class="section-head reveal">
-          <p class="kicker">Contact</p>
-          <h2>Let’s build something exceptional.</h2>
+      <section class="blog section fade-up" id="blog">
+        <div class="container blog-head">
+          <h2>Take a look at the latest articles</h2>
+          <a href="#" class="btn">EXPLORE ALL POSTS</a>
         </div>
-        <form class="contact-form reveal" novalidate>
-          <label>Name<input type="text" name="name" required /></label>
-          <label>Email<input type="email" name="email" required /></label>
-          <label>Project Type
-            <select name="projectType" required>
-              <option value="">Select one</option>
-              <option>Website Design</option>
-              <option>UI/UX Design</option>
-              <option>Branding</option>
-              <option>Landing Page</option>
-            </select>
-          </label>
-          <label>Message<textarea name="message" rows="5" required></textarea></label>
-          <button type="submit" class="btn btn-primary magnetic">Send Inquiry</button>
-          <p class="form-status" aria-live="polite"></p>
-        </form>
+        <div class="container blog-list">
+          <article class="blog-item">
+            <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=320&q=80" alt="Blog thumbnail" />
+            <div>
+              <p class="meta">Design • Jan 10, 2026</p>
+              <h3>How visual hierarchy improves digital conversion</h3>
+              <a href="#">VIEW PROJECT</a>
+            </div>
+          </article>
+          <article class="blog-item">
+            <img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=320&q=80" alt="Blog thumbnail" />
+            <div>
+              <p class="meta">UX • Feb 02, 2026</p>
+              <h3>Building premium interfaces with minimal systems</h3>
+              <a href="#">VIEW PROJECT</a>
+            </div>
+          </article>
+          <article class="blog-item">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=320&q=80" alt="Blog thumbnail" />
+            <div>
+              <p class="meta">Brand • Feb 18, 2026</p>
+              <h3>Editorial layout principles for modern portfolios</h3>
+              <a href="#">VIEW PROJECT</a>
+            </div>
+          </article>
+          <article class="blog-item">
+            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=320&q=80" alt="Blog thumbnail" />
+            <div>
+              <p class="meta">Marketing • Mar 01, 2026</p>
+              <h3>Why clean websites outperform visual clutter</h3>
+              <a href="#">VIEW PROJECT</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta section fade-up" id="contact">
+        <div class="container centered narrow">
+          <h2>Together <span>Email Me</span> Let’s create something</h2>
+          <p class="logo">Expo.</p>
+        </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="socials">
-        <a href="#" aria-label="Dribbble">◉</a>
-        <a href="#" aria-label="LinkedIn">◈</a>
-        <a href="#" aria-label="Behance">◎</a>
+    <footer class="footer section">
+      <div class="container">
+        <div class="footer-top">
+          <p>Launch your own website now!</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Dribbble">◯</a>
+            <a href="#" aria-label="Instagram">◯</a>
+            <a href="#" aria-label="Linkedin">◯</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Expo. All rights reserved.</p>
+          <div>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
       </div>
-      <div class="quick-links">
-        <a href="#hero">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <p>© <span id="year"></span> Alex Carter. Crafted with precision.</p>
-      <a href="#top" class="back-top">Back to top ↑</a>
     </footer>
-
-    <dialog id="modal1" class="case-modal">
-      <button class="close-modal" aria-label="Close">×</button>
-      <h3>FlowStack Dashboard</h3>
-      <p><strong>Problem:</strong> Complex onboarding caused high churn.</p>
-      <p><strong>Solution:</strong> Simplified IA, guided flows, and contextual UI patterns.</p>
-      <p><strong>Results:</strong> 38% lower onboarding abandonment, 212% conversion lift.</p>
-    </dialog>
-    <dialog id="modal2" class="case-modal">
-      <button class="close-modal" aria-label="Close">×</button>
-      <h3>Velour Commerce</h3>
-      <p><strong>Problem:</strong> Premium products presented with outdated layout.</p>
-      <p><strong>Solution:</strong> Editorial storytelling and high-trust checkout flow.</p>
-      <p><strong>Results:</strong> 2.1x conversion, 41% increase in average order value.</p>
-    </dialog>
-    <dialog id="modal3" class="case-modal">
-      <button class="close-modal" aria-label="Close">×</button>
-      <h3>Pulse Finance</h3>
-      <p><strong>Problem:</strong> Low retention caused by weak information hierarchy.</p>
-      <p><strong>Solution:</strong> Designed clarity-first data surfaces and helpful motion cues.</p>
-      <p><strong>Results:</strong> +33% week-4 retention and improved trust scores.</p>
-    </dialog>
 
     <script src="script.js"></script>
   </body>
