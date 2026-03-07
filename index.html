@@ -3,305 +3,208 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Expo. — Minimal Portfolio</title>
-    <meta name="description" content="Modern minimalist one-page portfolio website." />
+    <title>ClientHunt — AI Google My Business Lead Engine</title>
+    <meta
+      name="description"
+      content="ClientHunt helps freelancers and agencies discover local business leads from Google My Business listings with AI insights and contact extraction."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header" id="top">
+    <div class="mobile-overlay" id="mobileOverlay">
+      <p>This tool works best on Desktop. Please enable Desktop Mode or use a Laptop.</p>
+    </div>
+
+    <header class="site-header glass" id="siteHeader">
       <div class="container nav-wrap">
-        <a class="logo" href="#top">Expo.</a>
-        <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
-        <nav class="nav-links">
-          <a href="#top">Home</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#blog">Blog</a>
-          <a href="#contact">Contact</a>
+        <a class="logo" href="#landing">Client<span>Hunt</span></a>
+        <nav class="nav-links" id="navLinks">
+          <a href="#landing">Home</a>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <button class="btn btn-ghost" data-route="auth">Login</button>
+          <button class="btn" data-route="dashboard">Start Free</button>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="hero section fade-up">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <h1>I’m a creative<br />graphic &amp; web<br />designer</h1>
-            <p>
-              Building timeless brand and digital experiences<br />
-              with strategy, clarity, and modern aesthetics.
-            </p>
-            <a href="#contact" class="btn">CONNECT WITH ME</a>
-          </div>
-          <div class="hero-image-wrap">
-            <img
-              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80&sat=-100"
-              alt="Professional black and white portrait"
-              class="hero-image"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section class="client-strip section fade-up">
-        <div class="container brands">
-          <span>Hitech</span>
-          <span>Flash</span>
-          <span>Proline</span>
-          <span>Hitech</span>
-        </div>
-      </section>
-
-      <section class="help section fade-up">
-        <div class="container">
-          <h2>We can help</h2>
-          <div class="help-grid">
-            <div class="phone-card">
-              <img
-                src="https://images.unsplash.com/photo-1616348436168-de43ad0db179?auto=format&fit=crop&w=700&q=80"
-                alt="Phone mockup"
-              />
+      <section class="view active" id="view-landing">
+        <section class="hero section">
+          <div class="container hero-grid">
+            <div class="hero-copy fade-up">
+              <p class="eyebrow">AI LEAD INTELLIGENCE FOR MODERN AGENCIES</p>
+              <h1>Find Local Business Clients in Minutes</h1>
+              <p>
+                ClientHunt automatically extracts emails and phone numbers from Google My Business
+                listings so you can find clients faster.
+              </p>
+              <div class="hero-actions">
+                <button class="btn" data-route="dashboard">Start Free</button>
+                <button class="btn btn-ghost" data-route="dashboard">View Demo</button>
+              </div>
+              <div class="hero-proof">
+                <span>4.9/5 product rating</span>
+                <span>Trusted by 2,000+ growth teams</span>
+              </div>
             </div>
-            <div class="service-list">
-              <article>
-                <h3>UX/UI Design</h3>
-                <p>Crafting elegant digital interfaces that are intuitive and conversion-focused.</p>
-                <ul>
-                  <li>User flow mapping</li>
-                  <li>Interface systems</li>
-                  <li>Interaction details</li>
-                </ul>
+            <div class="hero-card floaty fade-up">
+              <h3>Live Search Preview</h3>
+              <p>Searching Google My Business listings...</p>
+              <div class="skeleton-table">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="features">
+          <div class="container">
+            <div class="section-head fade-up">
+              <h2>How ClientHunt Works</h2>
+            </div>
+            <div class="steps-grid">
+              <article class="glass fade-up"><h3>1. Search GMB Listings</h3><p>Query local niches and cities with AI-assisted Google Maps discovery.</p></article>
+              <article class="glass fade-up"><h3>2. Extract Contacts</h3><p>Collect business name, website, phone, address, and verified emails.</p></article>
+              <article class="glass fade-up"><h3>3. Launch Outreach</h3><p>Generate personalized cold emails and export segmented CSV lists.</p></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container metrics-grid fade-up">
+            <article class="glass"><h3>Google My Business Only</h3><p>Zero noise, only map listings relevant to local intent.</p></article>
+            <article class="glass"><h3>Gemini AI Insights</h3><p>Lead quality scoring and email personalization in one click.</p></article>
+            <article class="glass"><h3>Export-Ready Data</h3><p>Clean CSV outputs for CRM, outbound campaigns, and automations.</p></article>
+          </div>
+        </section>
+
+        <section class="section" id="pricing">
+          <div class="container">
+            <div class="section-head fade-up"><h2>Pricing that scales with your outreach</h2></div>
+            <div class="pricing-grid">
+              <article class="pricing-card glass fade-up">
+                <h3>Starter</h3><p class="price">$19<span>/month</span></p>
+                <ul><li>1000 leads / month</li><li>GMB search</li><li>Email extraction</li><li>CSV export</li></ul>
+                <a class="btn" href="https://checkout.dodopayments.com/buy/pdt_0NZuH1a5ELZAAxV91HrsV?quantity=1" target="_blank" rel="noopener">Upgrade Starter</a>
               </article>
-              <article>
-                <h3>Website Design</h3>
-                <p>Premium editorial websites tailored for modern, fast-growing brands.</p>
-              </article>
-              <article>
-                <h3>SEO Marketing</h3>
-                <p>Search-optimized structure and content strategy to improve discovery.</p>
+              <article class="pricing-card glass featured fade-up">
+                <h3>Pro</h3><p class="price">$49<span>/month</span></p>
+                <ul><li>10,000 leads / month</li><li>Advanced filters</li><li>Priority scraping</li><li>Bulk export</li></ul>
+                <a class="btn" href="https://checkout.dodopayments.com/buy/pdt_0NZuH1a5ELZAAxV91HrsV?quantity=1" target="_blank" rel="noopener">Upgrade Pro</a>
               </article>
             </div>
           </div>
+        </section>
+
+        <section class="section" id="faq">
+          <div class="container faq fade-up">
+            <h2>FAQ</h2>
+            <details open><summary>Does ClientHunt only use Google My Business listings?</summary><p>Yes. Search results are restricted to Google Maps/Business Profile style records.</p></details>
+            <details><summary>Can I run a free demo?</summary><p>Yes — one search with up to five leads before upgrade prompt.</p></details>
+            <details><summary>Is checkout secure?</summary><p>Yes. Upgrades redirect to secure DodoPayments checkout pages with order summary and plan trust messaging.</p></details>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" id="view-auth">
+        <div class="auth-layout">
+          <aside class="auth-preview glass fade-up">
+            <h2>Pipeline Preview</h2>
+            <p>Watch leads stream in real-time with premium outreach insights.</p>
+            <div class="pulse-orb"></div>
+          </aside>
+          <section class="auth-form glass fade-up">
+            <h2>Welcome back</h2>
+            <input id="authEmail" type="email" placeholder="Email" />
+            <input id="authPassword" type="password" placeholder="Password" />
+            <button class="btn" id="loginBtn">Login</button>
+            <button class="btn btn-ghost" id="signupBtn">Create Account</button>
+            <button class="btn btn-ghost" id="googleBtn">Continue with Google</button>
+            <button class="link-btn" id="forgotBtn">Forgot password?</button>
+          </section>
         </div>
       </section>
 
-      <section class="results section fade-up">
-        <div class="container centered narrow">
-          <h2>Providing stellar<br />results for every client</h2>
-          <p>
-            We blend design intelligence and market insight to deliver measurable,
-            business-focused outcomes.
-          </p>
-          <a href="#portfolio" class="btn">EXPLORE ALL PROJECTS</a>
-        </div>
-      </section>
+      <section class="view" id="view-dashboard">
+        <div class="dashboard-layout">
+          <aside class="sidebar glass">
+            <h3>ClientHunt</h3>
+            <button data-tab="home" class="tab active">Dashboard</button>
+            <button data-tab="search" class="tab">Search Leads</button>
+            <button data-tab="saved" class="tab">Saved Leads</button>
+            <button data-tab="exports" class="tab">Exports</button>
+            <button data-tab="billing" class="tab">Billing</button>
+            <button data-tab="settings" class="tab">Settings</button>
+            <button data-route="admin" class="tab">Admin</button>
+          </aside>
+          <section class="panel">
+            <div class="kpis" id="kpis"></div>
 
-      <section class="portfolio section fade-up" id="portfolio">
-        <div class="container">
-          <div class="portfolio-grid">
-            <article class="project-card">
-              <div class="thumb-wrap">
-                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1000&q=80" alt="Project thumbnail" />
+            <div class="search-card glass" id="searchPanel">
+              <h2>Lead Search Tool</h2>
+              <div class="search-form">
+                <input id="businessType" placeholder="Business Type (Restaurant Owners)" />
+                <input id="location" placeholder="Location (New York)" />
+                <input id="leadCount" type="number" min="1" max="1000" value="5" />
+                <button class="btn" id="searchBtn">Search Leads</button>
               </div>
-              <h3>Aria Commerce</h3>
-              <p>Website Design</p>
-            </article>
-            <article class="project-card">
-              <div class="thumb-wrap">
-                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1000&q=80" alt="Project thumbnail" />
-              </div>
-              <h3>Novalab Platform</h3>
-              <p>UX/UI Design</p>
-            </article>
-            <article class="project-card">
-              <div class="thumb-wrap">
-                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=80" alt="Project thumbnail" />
-              </div>
-              <h3>Hexa Studio</h3>
-              <p>Brand Experience</p>
-            </article>
-          </div>
-          <div class="portfolio-nav" aria-hidden="true">
-            <button>←</button>
-            <button>→</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="process section fade-up">
-        <div class="container">
-          <div class="process-head">
-            <h2>Process that helps you to break the competition</h2>
-            <a href="#contact" class="btn">START A PROJECT</a>
-          </div>
-          <div class="process-grid">
-            <article>
-              <span class="icon-dot">◌</span>
-              <h3>Market research</h3>
-              <p>Identify key audience needs and strategic market opportunities.</p>
-            </article>
-            <article>
-              <span class="icon-dot">◌</span>
-              <h3>Wire-framing</h3>
-              <p>Build clear content hierarchy and user-first interaction flows.</p>
-            </article>
-            <article>
-              <span class="icon-dot">◌</span>
-              <h3>Final visual design</h3>
-              <p>Deliver a polished premium interface with refined visual consistency.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="video section fade-up">
-        <div class="container">
-          <div class="video-head">
-            <h2>Watch video to discover me</h2>
-            <p>
-              A quick overview of my approach, workflow, and the design thinking behind each project.
-            </p>
-          </div>
-          <div class="video-thumb">
-            <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=1400&q=80" alt="Modern office creative space" />
-            <button class="play-btn" aria-label="Play video">▶</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="stats section fade-up">
-        <div class="container stats-grid">
-          <article>
-            <span class="stat-icon">✦</span>
-            <h3>30+</h3>
-            <p>Projects completed globally.</p>
-          </article>
-          <article>
-            <span class="stat-icon">✦</span>
-            <h3>4.8/5</h3>
-            <p>Average client satisfaction score.</p>
-          </article>
-          <article>
-            <span class="stat-icon">✦</span>
-            <h3>3M+</h3>
-            <p>Audience reached through my work.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="testimonials section fade-up">
-        <div class="container centered narrow">
-          <h2>Loved by customer around the world</h2>
-        </div>
-        <div class="container testimonial-grid">
-          <article class="testimonial-card">
-            <p class="stars">★★★★★</p>
-            <p>
-              “A remarkable design partner. The new website gave us clarity, confidence,
-              and measurable growth in lead quality.”
-            </p>
-            <div class="testimonial-meta">
-              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Client avatar" />
-              <div>
-                <strong>Sophia Turner</strong>
-                <span>Atlas Co.</span>
+              <div class="progress-wrap" id="progressWrap" hidden>
+                <p>Searching Google My Business listings...</p>
+                <div class="progress"><span id="progressBar"></span></div>
               </div>
             </div>
-            <small>350% Revenue Increase</small>
-          </article>
-          <article class="testimonial-card">
-            <p class="stars">★★★★★</p>
-            <p>
-              “The process was structured and refined. Every detail felt intentional,
-              from brand direction to final responsive execution.”
-            </p>
-            <div class="testimonial-meta">
-              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80" alt="Client avatar" />
-              <div>
-                <strong>Daniel Reed</strong>
-                <span>Proline Inc.</span>
+
+            <div class="table-wrap glass">
+              <table>
+                <thead>
+                  <tr>
+                    <th><input type="checkbox" id="selectAll" /></th>
+                    <th>Business Name</th><th>Website</th><th>Email</th><th>Phone Number</th><th>Address</th>
+                  </tr>
+                </thead>
+                <tbody id="resultsBody"></tbody>
+              </table>
+              <div class="table-actions">
+                <button class="btn btn-ghost" id="exportBtn">Export CSV</button>
+                <button class="btn" id="emailGenBtn">Generate Cold Email</button>
               </div>
             </div>
-            <small>210% Engagement Lift</small>
-          </article>
+            <pre class="email-output glass" id="emailOutput">Select leads to generate personalized cold email with Gemini AI.</pre>
+          </section>
         </div>
       </section>
 
-      <section class="blog section fade-up" id="blog">
-        <div class="container blog-head">
-          <h2>Take a look at the latest articles</h2>
-          <a href="#" class="btn">EXPLORE ALL POSTS</a>
-        </div>
-        <div class="container blog-list">
-          <article class="blog-item">
-            <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=320&q=80" alt="Blog thumbnail" />
-            <div>
-              <p class="meta">Design • Jan 10, 2026</p>
-              <h3>How visual hierarchy improves digital conversion</h3>
-              <a href="#">VIEW PROJECT</a>
-            </div>
-          </article>
-          <article class="blog-item">
-            <img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=320&q=80" alt="Blog thumbnail" />
-            <div>
-              <p class="meta">UX • Feb 02, 2026</p>
-              <h3>Building premium interfaces with minimal systems</h3>
-              <a href="#">VIEW PROJECT</a>
-            </div>
-          </article>
-          <article class="blog-item">
-            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=320&q=80" alt="Blog thumbnail" />
-            <div>
-              <p class="meta">Brand • Feb 18, 2026</p>
-              <h3>Editorial layout principles for modern portfolios</h3>
-              <a href="#">VIEW PROJECT</a>
-            </div>
-          </article>
-          <article class="blog-item">
-            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=320&q=80" alt="Blog thumbnail" />
-            <div>
-              <p class="meta">Marketing • Mar 01, 2026</p>
-              <h3>Why clean websites outperform visual clutter</h3>
-              <a href="#">VIEW PROJECT</a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="cta section fade-up" id="contact">
-        <div class="container centered narrow">
-          <h2>Together <span>Email Me</span> Let’s create something</h2>
-          <p class="logo">Expo.</p>
+      <section class="view" id="view-admin">
+        <div class="container section">
+          <h2>Admin Dashboard</h2>
+          <div class="admin-grid">
+            <article class="glass"><h3>Users</h3><p id="adminUsers">124</p></article>
+            <article class="glass"><h3>Subscriptions</h3><p id="adminSubs">67</p></article>
+            <article class="glass"><h3>Lead Usage</h3><p id="adminUsage">3,421</p></article>
+            <article class="glass"><h3>Searches</h3><p id="adminSearches">588</p></article>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer section">
-      <div class="container">
-        <div class="footer-top">
-          <p>Launch your own website now!</p>
-          <div class="social-icons">
-            <a href="#" aria-label="Dribbble">◯</a>
-            <a href="#" aria-label="Instagram">◯</a>
-            <a href="#" aria-label="Linkedin">◯</a>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>© 2026 Expo. All rights reserved.</p>
-          <div>
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#contact">Contact</a>
-          </div>
-        </div>
+    <div class="modal" id="upgradeModal" hidden>
+      <div class="modal-card glass">
+        <h3>Upgrade to unlock unlimited leads.</h3>
+        <p>You have reached your free demo limit (1 search, 5 leads).</p>
+        <a class="btn" href="#pricing">View pricing</a>
+        <button class="btn btn-ghost" id="closeModal">Close</button>
       </div>
-    </footer>
+    </div>
 
+    <div class="toast" id="toast"></div>
     <script src="script.js"></script>
   </body>
 </html>
